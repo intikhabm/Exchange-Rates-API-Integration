@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS test.exchange_rates (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    currency_code VARCHAR(10) NOT NULL,
+    rate DOUBLE NOT NULL,
+    base_currency VARCHAR(10) DEFAULT 'USD',
+    fetched_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

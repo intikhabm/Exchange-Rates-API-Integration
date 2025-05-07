@@ -1,0 +1,6 @@
+CREATE SCHEMA IF NOT EXISTS test;
+
+CREATE TABLE IF NOT EXISTS test.currency (
+    code VARCHAR(3) NOT NULL PRIMARY KEY,
+    name VARCHAR(50)
+);
